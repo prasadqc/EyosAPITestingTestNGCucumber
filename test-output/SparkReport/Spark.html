@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title></title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
-<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@83e4e8776725a49f9e738b19d1e718e7404d6c19/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
 <style type="text/css"></style></head><body class="spa -report standard">
   <div class="app">
     <div class="layout">
@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 18, 2023 08:55:47 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 19, 2023 04:38:22 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -77,7 +72,6 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,116 +79,79 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">cucumber</a>
+<a class="dropdown-item" href="#">cucumber</a><a class="dropdown-item" href="#">@SmokeTest</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
-          <div class="status-avatar fail-bg">
-            <i class="fa fa-times text-white"></i>
-          </div>
           <div class="test-detail">
-            <span class="meta text-white badge badge-sm"></span>
             <p class="name">RunCucumberTest</p>
-            <p class="text-sm"><span>20:55:47 pm</span> / <span>0.186 secs</span></p>
+            <p class="text-sm">
+              <span>4:38:23 pm</span> / <span>00:00:02:966</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
-<h5 class="test-status text-fail">RunCucumberTest</h5>
-<span class='badge badge-success'>04.18.2023 20:55:47</span>
-<span class='badge badge-danger'>04.18.2023 20:55:48</span>
-<span class='badge badge-default'>0.186 secs</span>
+<h5 class="test-status text-pass">RunCucumberTest</h5>
+<span class='badge badge-success'>04.19.2023 4:38:23 pm</span>
+<span class='badge badge-danger'>04.19.2023 4:38:26 pm</span>
+<span class='badge badge-default'>00:00:02:966</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-10 m-l-5">Runs Cucumber Scenarios</div>
 </div>
-</div>  <div class="mt-4">  <div class="accordion">
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:02:963</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="2">runScenario</div>
-            <div class="status-avatar float-right fail-bg">
-               <i class="fa fa-times text-white"></i>
-            </div>
+            <a class="node " id="2"><span>runScenario</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">cucumber</span>            </div>
           </div>
         </div>
-  <div class="accordion">
+  <div class="accordion" role="tablist">
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:806</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="3">["Validate correct product details are retrieved when User entered valid product id", "My Store API services"]</div>
-            <div class="status-avatar float-right fail-bg">
-               <i class="fa fa-times text-white"></i>
-            </div>
+            <a class="node " id="3"><span>["Validate correct product details are retrieved when User entered valid product id", "My Store API services"]</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">cucumber</span>            </div>
           </div>
         </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:55:47 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NoSuchMethodError: 'boolean com.aventstack.extentreports.service.ExtentService.isDeviceEnabled()'
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.lambda$updateCategoryAndDeviceAndAuthor$3(ExtentCucumberAdapter.java:448)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateCategoryAndDeviceAndAuthor(ExtentCucumberAdapter.java:447)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createTestCase(ExtentCucumberAdapter.java:430)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:163)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$100(ExtentCucumberAdapter.java:63)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:62)
-	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:206)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:72)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-          
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -204,73 +161,29 @@
       </div>
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:087</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="7">["Validate product is not found when User entered blank product id", "My Store API services"]</div>
-            <div class="status-avatar float-right fail-bg">
-               <i class="fa fa-times text-white"></i>
-            </div>
+            <a class="node " id="11"><span>["Validate product is not found when User entered blank product id", "My Store API services"]</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">cucumber</span>            </div>
           </div>
         </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:55:47 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NoSuchMethodError: 'boolean com.aventstack.extentreports.service.ExtentService.isDeviceEnabled()'
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.lambda$updateCategoryAndDeviceAndAuthor$3(ExtentCucumberAdapter.java:448)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateCategoryAndDeviceAndAuthor(ExtentCucumberAdapter.java:447)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createTestCase(ExtentCucumberAdapter.java:430)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:163)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$100(ExtentCucumberAdapter.java:63)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:62)
-	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:206)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:72)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-          
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -280,73 +193,29 @@
       </div>
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:467</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="10">["Validate product is not found when User entered special characters product id", "My Store API services"]</div>
-            <div class="status-avatar float-right fail-bg">
-               <i class="fa fa-times text-white"></i>
-            </div>
+            <a class="node " id="18"><span>["Validate product is not found when User entered special characters product id", "My Store API services"]</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">cucumber</span>            </div>
           </div>
         </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:55:48 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NoSuchMethodError: 'boolean com.aventstack.extentreports.service.ExtentService.isDeviceEnabled()'
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.lambda$updateCategoryAndDeviceAndAuthor$3(ExtentCucumberAdapter.java:448)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateCategoryAndDeviceAndAuthor(ExtentCucumberAdapter.java:447)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createTestCase(ExtentCucumberAdapter.java:430)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:163)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$100(ExtentCucumberAdapter.java:63)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:62)
-	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:206)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:72)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-          
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -356,73 +225,29 @@
       </div>
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:601</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="13">["Validate Product is not retrieved when User entered invalid API Key", "My Store API services"]</div>
-            <div class="status-avatar float-right fail-bg">
-               <i class="fa fa-times text-white"></i>
-            </div>
+            <a class="node " id="25"><span>["Validate Product is not retrieved when User entered invalid API Key", "My Store API services"]</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">cucumber</span>            </div>
           </div>
         </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:55:48 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:26 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NoSuchMethodError: 'boolean com.aventstack.extentreports.service.ExtentService.isDeviceEnabled()'
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.lambda$updateCategoryAndDeviceAndAuthor$3(ExtentCucumberAdapter.java:448)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateCategoryAndDeviceAndAuthor(ExtentCucumberAdapter.java:447)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createTestCase(ExtentCucumberAdapter.java:430)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:163)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$100(ExtentCucumberAdapter.java:63)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:62)
-	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:206)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:72)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-          
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -440,112 +265,681 @@
           author=""
           tag=""
           device="">
-          <div class="status-avatar pass-bg">
-            <i class="fa fa-check text-white"></i>
-          </div>
           <div class="test-detail">
-            <span class="meta text-white badge badge-sm"></span>
             <p class="name">My Store API services</p>
-            <p class="text-sm"><span>20:55:47 pm</span> / <span>0.037 secs</span></p>
+            <p class="text-sm">
+              <span>4:38:23 pm</span> / <span>00:00:02:828</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<div class='float-right'><span class='badge badge-default'>#test-id=4</span></div>
 <h5 class="test-status text-pass">My Store API services</h5>
-<span class='badge badge-success'>04.18.2023 20:55:47</span>
-<span class='badge badge-danger'>04.18.2023 20:55:48</span>
-<span class='badge badge-default'>0.037 secs</span>
+<span class='badge badge-success'>04.19.2023 4:38:23 pm</span>
+<span class='badge badge-danger'>04.19.2023 4:38:26 pm</span>
+<span class='badge badge-default'>00:00:02:828</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
-</div>  <div class="mt-4">  <div class="accordion">
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:669</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="5">Validate correct product details are retrieved when User entered valid product id</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="5"><span>Validate correct product details are retrieved when User entered valid product id</span></a>
+            <div class="node-attr">
             </div>
           </div>
         </div>
-  <div class="accordion">
+  <div class="accordion" role="tablist">
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:665</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="6">Validate correct product details are retrieved when User entered valid product id</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="6"><span>Validate correct product details are retrieved when User entered valid product id</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">@SmokeTest</span>            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:318</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="7"><span>Given Request with https://my-store2.p.rapidapi.com/, 85ffde5187mshb79e95fd76a8362p1d392djsn85956d649909 and my-store2.p.rapidapi.com</span></a>
+            <div class="node-attr">
             </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:23 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:965</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="8"><span>When get "catalog/product/" with parameter "911051"</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:24 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:008</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>Then validate status code 200</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:24 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:367</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="10"><span>Then Valid product details are displayed as "911051",EYOSProduct1,100,EYOS,,,</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
           </div>
         </div>
       </div>
   </div>
       </div>
+  </div>
+      </div>
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:083</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="8">Validate product is not found when User entered blank product id</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="12"><span>Validate product is not found when User entered blank product id</span></a>
+            <div class="node-attr">
             </div>
           </div>
         </div>
-  <div class="accordion">
+  <div class="accordion" role="tablist">
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:083</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="9">Validate product is not found when User entered blank product id</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="13"><span>Validate product is not found when User entered blank product id</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">@SmokeTest</span>            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="14"><span>Given Request with https://my-store2.p.rapidapi.com/, 85ffde5187mshb79e95fd76a8362p1d392djsn85956d649909 and my-store2.p.rapidapi.com</span></a>
+            <div class="node-attr">
             </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:074</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="15"><span>When get "catalog/product/" with parameter "     "</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="16"><span>Then validate status code 404</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:006</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="17"><span>Then Validate Endpoint '/catalog/product/' does not exist</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
           </div>
         </div>
       </div>
   </div>
       </div>
+  </div>
+      </div>
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:465</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="11">Validate product is not found when User entered special characters product id</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="19"><span>Validate product is not found when User entered special characters product id</span></a>
+            <div class="node-attr">
             </div>
           </div>
         </div>
-  <div class="accordion">
+  <div class="accordion" role="tablist">
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:465</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="12">Validate product is not found when User entered special characters product id</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="20"><span>Validate product is not found when User entered special characters product id</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">@SmokeTest</span>            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:002</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="21"><span>Given Request with https://my-store2.p.rapidapi.com/, 85ffde5187mshb79e95fd76a8362p1d392djsn85956d649909 and my-store2.p.rapidapi.com</span></a>
+            <div class="node-attr">
             </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:451</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="22"><span>When get "catalog/product/" with parameter "%"</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="23"><span>Then validate status code 404</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:009</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="24"><span>Then Validate Product with ID % not found</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
           </div>
         </div>
       </div>
   </div>
       </div>
+  </div>
+      </div>
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:598</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="14">Validate Product is not retrieved when User entered invalid API Key</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="26"><span>Validate Product is not retrieved when User entered invalid API Key</span></a>
+            <div class="node-attr">
             </div>
           </div>
         </div>
-  <div class="accordion">
+  <div class="accordion" role="tablist">
       <div class="card">
         <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:597</span></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="card-title">
-            <div class="node" id="15">Validate Product is not retrieved when User entered invalid API Key</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
+            <a class="node " id="27"><span>Validate Product is not retrieved when User entered invalid API Key</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">@SmokeTest</span>            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:002</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="28"><span>Given Request with https://my-store2.p.rapidapi.com/, 85ffde5187mshb79e95fd76a8362p1d392djsn85956d6499099 and my-store2.p.rapidapi.com</span></a>
+            <div class="node-attr">
             </div>
           </div>
         </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:25 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:583</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="29"><span>When get "catalog/product/" with parameter "911051"</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:26 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="30"><span>Then validate status code 403</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:26 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:011</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="31"><span>Then Validate You are not subscribed to this API.</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:38:26 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
       </div>
   </div>
       </div>
@@ -562,119 +956,18 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left">
-<li>
-<a href="">
-<span class="font-size-14">Exception</span>
-</a>
-</li>
-</ul>
-<ul class="tools text-right">
-<li>
-<a href="#">
-<span class="badge badge-primary">1</span>
-</a>
-</li>
-</ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="open-test">
-<div class="test-detail">
-<p class="name">java.lang.NoSuchMethodError</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.NoSuchMethodError</h4>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:55:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>["Validate correct product details are retrieved when User entered valid product id", "My Store API services"]</a>
-<div class="">
-<span class="badge badge-default">runScenario</span>
-</div>
-</td>
-</tr>
-<tr>
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:55:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>["Validate product is not found when User entered blank product id", "My Store API services"]</a>
-<div class="">
-<span class="badge badge-default">runScenario</span>
-</div>
-</td>
-</tr>
-<tr>
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:55:47 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='10'>["Validate product is not found when User entered special characters product id", "My Store API services"]</a>
-<div class="">
-<span class="badge badge-default">runScenario</span>
-</div>
-</td>
-</tr>
-<tr>
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:55:48 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='13'>["Validate Product is not retrieved when User entered invalid API Key", "My Store API services"]</a>
-<div class="">
-<span class="badge badge-default">runScenario</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-tools">
-<ul>
-<li>
-<a class="back-to-test" href="javascript:void(0)">
-<i class="fa fa-arrow-left"></i>
-</a>
-</li>
-</ul>
-</div>
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Tags</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">cucumber</p>
 <p class="duration text-sm">1 tests</p>
@@ -682,7 +975,7 @@
 <div class="test-contents d-none">
 <div class="info">
 <h4>cucumber</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -693,9 +986,9 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:55:47 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:38:23 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>runScenario</a>
 <div class="">
@@ -707,19 +1000,76 @@
 </table>
 </div>
 </li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@SmokeTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SmokeTest</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:38:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='6'>Validate correct product details are retrieved when User entered valid product id</a>
+<div class="">
+<span class="badge badge-default">My Store API services.Validate correct product details are retrieved when User entered valid product id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:38:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='13'>Validate product is not found when User entered blank product id</a>
+<div class="">
+<span class="badge badge-default">My Store API services.Validate product is not found when User entered blank product id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:38:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='20'>Validate product is not found when User entered special characters product id</a>
+<div class="">
+<span class="badge badge-default">My Store API services.Validate product is not found when User entered special characters product id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:38:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='27'>Validate Product is not retrieved when User entered invalid API Key</a>
+<div class="">
+<span class="badge badge-default">My Store API services.Validate Product is not retrieved when User entered invalid API Key</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 </ul>
 </div>
 </div>
 <div class="test-content scrollable">
-<div class="test-content-tools">
-<ul>
-<li>
-<a class="back-to-test" href="javascript:void(0)">
-<i class="fa fa-arrow-left"></i>
-</a>
-</li>
-</ul>
-</div>
 <div class="test-content-detail">
 <div class="detail-body"></div>
 </div>
@@ -729,25 +1079,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 18, 2023 08:55:47 pm</h3>
+<h3>Apr 19, 2023 04:38:22 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 18, 2023 08:55:48 pm</h3>
+<h3>Apr 19, 2023 04:38:26 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Class Passed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Class Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -763,12 +1113,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>1</b> class passed
+<div><small data-tooltip='100%'>
+<b>2</b> class passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> class failed,
+<small data-tooltip='0%'><b>0</b> class failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -786,9 +1136,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'><b>4</b> methods passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> methods passed</small></div>
 <div>
-<small data-tooltip='20%'><b>1</b> methods failed,
+<small data-tooltip='0%'><b>0</b> methods failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -806,9 +1156,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> passed</small></div>
+<div><small data-tooltip='100%'><b>20</b> passed</small></div>
 <div>
-<small data-tooltip='100%'><b>4</b> failed,
+<small data-tooltip='0%'><b>0</b> failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -826,9 +1176,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>20</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>4</b> events failed,
+<small data-tooltip='0%'><b>0</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -836,19 +1186,39 @@
 </div>
 </div>
 </div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"RunCucumberTest":2.966,"My Store API services":2.828
+};
+</script>
 <div class="row">
-<div class="col-md-4 category-container">
+<div class="col-lg-6 col-md-12 category-container">
 <div class="card">
 <div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>cucumber</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@SmokeTest</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -859,25 +1229,25 @@
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 1,
+passParent: 2,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 4,
-failChild: 1,
+passChild: 5,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 0,
-failGrandChild: 4,
+passGrandChild: 20,
+failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 4,
+passEvents: 20,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
@@ -886,6 +1256,6 @@ infoEvents: 0
       </div>
     </div>
   </div>
-<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@5cf22a596531402644b8523470526952516f345f/spark/js/spark-script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
 <script type="text/javascript"></script></body>
 </html>
